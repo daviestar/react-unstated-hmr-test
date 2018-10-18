@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "NODE_ENV=development webpack-dev-server --hot --inline",
+    "dist": "mkdirp dist && rm -Rf dist/* && NODE_ENV=production webpack --optimize-minimize"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "unstated": "^2.1.1",
+    "unstated-hmr": "^1.0.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.0.0",
+    "@babel/plugin-proposal-class-properties": "^7.0.0",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0",
+    "@babel/plugin-transform-async-to-generator": "^7.0.0",
+    "@babel/plugin-transform-react-constant-elements": "^7.0.0",
+    "@babel/plugin-transform-react-inline-elements": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-loader": "^8.0.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.4",
+    "node-sass": "^4.9.3",
+    "react-hot-loader": "^4.3.5",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.9"
+  }
+}
